@@ -1,0 +1,188 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Api/Cliente",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "13923"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cliente",
+      "UpstreamHttpMethod": [ "POST", "GET", "PATCH" ],
+      "Key": "ClienteTotal",
+      "SwaggerKey": "apicliente"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Cliente/{clienteId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "13923"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cliente/{clienteId}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ],
+      "Key": "ClienteIndividual",
+      "SwaggerKey": "apicliente"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/ClienteIdentificacion",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "13923"
+        }
+      ],
+      "UpstreamPathTemplate": "/ClienteIdentificacion",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Cuenta",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "33958"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cuenta",
+      "UpstreamHttpMethod": [ "POST", "GET", "PATCH" ],
+      "Key": "CuentaTotal",
+      "SwaggerKey": "apicuenta"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Cuenta/{cuentaId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "33958"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cuenta/{cuentaId}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ],
+      "Key": "CuentaIndividual",
+      "SwaggerKey": "apicuenta"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/CuentaCliente/{clienteId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "33958"
+        }
+      ],
+      "UpstreamPathTemplate": "/CuentaCliente/{clienteId}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Movimiento",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "52348"
+        }
+      ],
+      "UpstreamPathTemplate": "/Movimiento",
+      "UpstreamHttpMethod": [ "POST", "GET", "PATCH" ],
+      "Key": "MovimientoTotal",
+      "SwaggerKey": "apimovimiento"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Movimiento/{movimientoId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "52348"
+        }
+      ],
+      "UpstreamPathTemplate": "/Movimiento/{movimientoId}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ],
+      "Key": "MovimientoIndividual",
+      "SwaggerKey": "apimovimiento"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Movimiento/{cuentaId}/{fechaInicial}/{fechaFinal}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "52348"
+        }
+      ],
+      "UpstreamPathTemplate": "/Movimiento/{cuentaId}/{fechaInicial}/{fechaFinal}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "Key": "MovimientoFechas",
+      "SwaggerKey": "apimovimiento"
+    },
+    {
+      "DownstreamPathTemplate": "/Api/Movimiento",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "52348"
+        }
+      ],
+      "UpstreamPathTemplate": "/Transaccion",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DelegatingHandlers": [
+        "TransaccionHandler"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/Api/ClienteIdentificacion",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "13923"
+        }
+      ],
+      "UpstreamPathTemplate": "/ReporteFechas",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DelegatingHandlers": [
+        "ReporteHandler"
+      ]
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "apicliente",
+      "Config": [
+        {
+          "Name": "Cliente",
+          "Version": "v1",
+          "Url": "http://localhost:13923/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "apicuenta",
+      "Config": [
+        {
+          "Name": "Cuenta",
+          "Version": "v1",
+          "Url": "http://localhost:33958/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "apimovimiento",
+      "Config": [
+        {
+          "Name": "Movimiento",
+          "Version": "v1",
+          "Url": "http://localhost:52348/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}
