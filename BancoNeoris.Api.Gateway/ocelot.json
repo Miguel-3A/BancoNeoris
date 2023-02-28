@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
+          "Host": "BancoNeoris.Api.Cliente",
           "Port": "80"
         }
       ],
@@ -19,7 +19,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
+          "Host": "BancoNeoris.Api.Cliente",
           "Port": "80"
         }
       ],
@@ -33,7 +33,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
+          "Host": "BancoNeoris.Api.Cliente",
           "Port": "80"
         }
       ],
@@ -45,7 +45,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cuenta-service",
+          "Host": "BancoNeoris.Api.Cuenta",
           "Port": "80"
         }
       ],
@@ -59,7 +59,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cuenta-service",
+          "Host": "BancoNeoris.Api.Cuenta",
           "Port": "80"
         }
       ],
@@ -73,7 +73,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cuenta-service",
+          "Host": "BancoNeoris.Api.Cuenta",
           "Port": "80"
         }
       ],
@@ -85,7 +85,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
+          "Host": "BancoNeoris.Api.Movimiento",
           "Port": "80"
         }
       ],
@@ -99,7 +99,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
+          "Host": "BancoNeoris.Api.Movimiento",
           "Port": "80"
         }
       ],
@@ -113,7 +113,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
+          "Host": "BancoNeoris.Api.Movimiento",
           "Port": "80"
         }
       ],
@@ -127,7 +127,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
+          "Host": "BancoNeoris.Api.Movimiento",
           "Port": "80"
         }
       ],
@@ -142,7 +142,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
+          "Host": "BancoNeoris.Api.Cliente",
           "Port": "80"
         }
       ],
@@ -160,7 +160,7 @@
         {
           "Name": "Cliente",
           "Version": "v1",
-          "Url": "http://microservice-cliente-service/swagger/v1/swagger.json"
+          "Url": "http://BancoNeoris.Api.Cliente/swagger/v1/swagger.json"
         }
       ]
     },
@@ -170,7 +170,7 @@
         {
           "Name": "Cuenta",
           "Version": "v1",
-          "Url": "http://microservice-cuenta-service/swagger/v1/swagger.json"
+          "Url": "http://BancoNeoris.Api.Cuenta/swagger/v1/swagger.json"
         }
       ]
     },
@@ -180,7 +180,7 @@
         {
           "Name": "Movimiento",
           "Version": "v1",
-          "Url": "http://microservice-movimiento-service/swagger/v1/swagger.json"
+          "Url": "http://BancoNeoris.Api.Movimiento/swagger/v1/swagger.json"
         }
       ]
     }

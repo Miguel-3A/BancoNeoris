@@ -11,30 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoNeoris.Api.Movimiento"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoNeoris.Api.Gateway", "BancoNeoris.Api.Gateway\BancoNeoris.Api.Gateway.csproj", "{52C8C9B8-EA40-4849-BD66-2A78DE0550FC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernets", "Kubernets", "{BCE2B4C1-4CCB-4417-A1FD-30AAC0A32E47}"
-	ProjectSection(SolutionItems) = preProject
-		gateway-deploy.yml = gateway-deploy.yml
-		gateway-pod.yml = gateway-pod.yml
-		gateway-service.yml = gateway-service.yml
-		microservice-cliente-deploy.yml = microservice-cliente-deploy.yml
-		microservice-cliente-pod.yml = microservice-cliente-pod.yml
-		microservice-cliente-service.yml = microservice-cliente-service.yml
-		microservice-cuenta-deploy.yml = microservice-cuenta-deploy.yml
-		microservice-cuenta-pod.yml = microservice-cuenta-pod.yml
-		microservice-cuenta-service.yml = microservice-cuenta-service.yml
-		microservice-movimiento-deploy.yml = microservice-movimiento-deploy.yml
-		microservice-movimiento-pod.yml = microservice-movimiento-pod.yml
-		microservice-movimiento-service.yml = microservice-movimiento-service.yml
-		mssql-cliente-deploy.yml = mssql-cliente-deploy.yml
-		mssql-cliente-pod.yml = mssql-cliente-pod.yml
-		mssql-cliente-service.yml = mssql-cliente-service.yml
-		mssql-cuenta-deploy.yml = mssql-cuenta-deploy.yml
-		mssql-cuenta-pod.yml = mssql-cuenta-pod.yml
-		mssql-cuenta-service.yml = mssql-cuenta-service.yml
-		mssql-movimiento-deploy.yml = mssql-movimiento-deploy.yml
-		mssql-movimiento-pod.yml = mssql-movimiento-pod.yml
-		mssql-movimiento-service.yml = mssql-movimiento-service.yml
-	EndProjectSection
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C2D26CD5-60BC-4438-A486-21B96DFCD98C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +35,10 @@ Global
 		{52C8C9B8-EA40-4849-BD66-2A78DE0550FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52C8C9B8-EA40-4849-BD66-2A78DE0550FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52C8C9B8-EA40-4849-BD66-2A78DE0550FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D26CD5-60BC-4438-A486-21B96DFCD98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D26CD5-60BC-4438-A486-21B96DFCD98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D26CD5-60BC-4438-A486-21B96DFCD98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D26CD5-60BC-4438-A486-21B96DFCD98C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

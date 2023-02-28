@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  banconeoris.api.cliente:
+    image: ${DOCKER_REGISTRY-}banconeorisapicliente
+    build:
+      context: .
+      dockerfile: BancoNeoris.Api.Cliente/Dockerfile
+
+  banconeoris.api.cuenta:
+    image: ${DOCKER_REGISTRY-}banconeorisapicuenta
+    build:
+      context: .
+      dockerfile: BancoNeoris.Api.Cuenta/Dockerfile
+
+  banconeoris.api.movimiento:
+    image: ${DOCKER_REGISTRY-}banconeorisapimovimiento
+    build:
+      context: .
+      dockerfile: BancoNeoris.Api.Movimiento/Dockerfile
+
+  banconeoris.api.gateway:
+    image: ${DOCKER_REGISTRY-}banconeorisapigateway
+    build:
+      context: .
+      dockerfile: BancoNeoris.Api.Gateway/Dockerfile
+
+networks:
+    default:
+        external:
+            name: microserviceneoris
+
+

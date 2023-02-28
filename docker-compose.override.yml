@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  banconeoris.api.cliente:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6104:80"
+
+  banconeoris.api.cuenta:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6105:80"
+
+
+  banconeoris.api.movimiento:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6106:80"
+
+
+  banconeoris.api.gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6107:80"
+
