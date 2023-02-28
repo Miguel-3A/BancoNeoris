@@ -1,12 +1,12 @@
-{
+﻿{
   "Routes": [
     {
       "DownstreamPathTemplate": "/Api/Cliente",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "13923"
         }
       ],
       "UpstreamPathTemplate": "/Cliente",
@@ -19,8 +19,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "13923"
         }
       ],
       "UpstreamPathTemplate": "/Cliente/{clienteId}",
@@ -33,8 +33,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "13923"
         }
       ],
       "UpstreamPathTemplate": "/ClienteIdentificacion",
@@ -45,8 +45,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cuenta-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "33958"
         }
       ],
       "UpstreamPathTemplate": "/Cuenta",
@@ -59,8 +59,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cuenta-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "33958"
         }
       ],
       "UpstreamPathTemplate": "/Cuenta/{cuentaId}",
@@ -73,8 +73,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cuenta-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "33958"
         }
       ],
       "UpstreamPathTemplate": "/CuentaCliente/{clienteId}",
@@ -85,8 +85,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "52348"
         }
       ],
       "UpstreamPathTemplate": "/Movimiento",
@@ -99,8 +99,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "52348"
         }
       ],
       "UpstreamPathTemplate": "/Movimiento/{movimientoId}",
@@ -113,8 +113,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "52348"
         }
       ],
       "UpstreamPathTemplate": "/Movimiento/{cuentaId}/{fechaInicial}/{fechaFinal}",
@@ -127,8 +127,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-movimiento-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "52348"
         }
       ],
       "UpstreamPathTemplate": "/Transaccion",
@@ -142,8 +142,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "microservice-cliente-service",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "13923"
         }
       ],
       "UpstreamPathTemplate": "/ReporteFechas",
@@ -160,7 +160,7 @@
         {
           "Name": "Cliente",
           "Version": "v1",
-          "Url": "http://microservice-cliente-service/swagger/v1/swagger.json"
+          "Url": "http://localhost:13923/swagger/v1/swagger.json"
         }
       ]
     },
@@ -170,7 +170,7 @@
         {
           "Name": "Cuenta",
           "Version": "v1",
-          "Url": "http://microservice-cuenta-service/swagger/v1/swagger.json"
+          "Url": "http://localhost:33958/swagger/v1/swagger.json"
         }
       ]
     },
@@ -180,7 +180,7 @@
         {
           "Name": "Movimiento",
           "Version": "v1",
-          "Url": "http://microservice-movimiento-service/swagger/v1/swagger.json"
+          "Url": "http://localhost:52348/swagger/v1/swagger.json"
         }
       ]
     }

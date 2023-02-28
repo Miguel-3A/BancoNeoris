@@ -9,7 +9,32 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoNeoris.Api.Cuenta", "B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoNeoris.Api.Movimiento", "BancoNeoris.Api.Movimiento\BancoNeoris.Api.Movimiento.csproj", "{079854BE-D3F4-4E5E-8000-6D9B219CF64B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BancoNeoris.Api.Gateway", "BancoNeoris.Api.Gateway\BancoNeoris.Api.Gateway.csproj", "{52C8C9B8-EA40-4849-BD66-2A78DE0550FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BancoNeoris.Api.Gateway", "BancoNeoris.Api.Gateway\BancoNeoris.Api.Gateway.csproj", "{52C8C9B8-EA40-4849-BD66-2A78DE0550FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernets", "Kubernets", "{BCE2B4C1-4CCB-4417-A1FD-30AAC0A32E47}"
+	ProjectSection(SolutionItems) = preProject
+		gateway-deploy.yml = gateway-deploy.yml
+		gateway-pod.yml = gateway-pod.yml
+		gateway-service.yml = gateway-service.yml
+		microservice-cliente-deploy.yml = microservice-cliente-deploy.yml
+		microservice-cliente-pod.yml = microservice-cliente-pod.yml
+		microservice-cliente-service.yml = microservice-cliente-service.yml
+		microservice-cuenta-deploy.yml = microservice-cuenta-deploy.yml
+		microservice-cuenta-pod.yml = microservice-cuenta-pod.yml
+		microservice-cuenta-service.yml = microservice-cuenta-service.yml
+		microservice-movimiento-deploy.yml = microservice-movimiento-deploy.yml
+		microservice-movimiento-pod.yml = microservice-movimiento-pod.yml
+		microservice-movimiento-service.yml = microservice-movimiento-service.yml
+		mssql-cliente-deploy.yml = mssql-cliente-deploy.yml
+		mssql-cliente-pod.yml = mssql-cliente-pod.yml
+		mssql-cliente-service.yml = mssql-cliente-service.yml
+		mssql-cuenta-deploy.yml = mssql-cuenta-deploy.yml
+		mssql-cuenta-pod.yml = mssql-cuenta-pod.yml
+		mssql-cuenta-service.yml = mssql-cuenta-service.yml
+		mssql-movimiento-deploy.yml = mssql-movimiento-deploy.yml
+		mssql-movimiento-pod.yml = mssql-movimiento-pod.yml
+		mssql-movimiento-service.yml = mssql-movimiento-service.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

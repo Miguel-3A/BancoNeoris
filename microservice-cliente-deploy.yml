@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-cliente-deploy
+  labels:
+    name: microservice-cliente-deploy
+    app: microservice
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: microservice-cliente
+      type: microservice
+  template:
+    metadata:
+      name: microservice-cliente-pod
+      labels: 
+        app: microservice-cliente
+        type: microservice
+    spec:
+      containers:
+        - name: microservice-cliente-app
+          image: miguel3a/banconeorisapicliente:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: ConnectionStrings__ConexionDB
+              value: Server=mssql-service;Database=BancoNeoris;User=sa;Password=BancoNeoris2023

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-movimiento-deploy
+  labels:
+    name: microservice-movimiento-deploy
+    app: microservice
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: microservice-movimiento
+      type: microservice
+  template:
+    metadata:
+      name: microservice-movimiento-pod
+      labels: 
+        app: microservice-movimiento
+        type: microservice
+    spec:
+      containers:
+        - name: microservice-movimiento-app
+          image: miguel3a/banconeorisapimovimiento:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: ConnectionStrings__ConexionDB
+              value: Server=mssql-service;Database=BancoNeoris;User=sa;Password=BancoNeoris2023

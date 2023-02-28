@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-cuenta-deploy
+  labels:
+    name: microservice-cuenta-deploy
+    app: microservice
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: microservice-cuenta
+      type: microservice
+  template:
+    metadata:
+      name: microservice-cuenta-pod
+      labels: 
+        app: microservice-cuenta
+        type: microservice
+    spec:
+      containers:
+        - name: microservice-cuenta-app
+          image: miguel3a/banconeorisapicuenta:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: ConnectionStrings__ConexionDB
+              value: Server=mssql-service;Database=BancoNeoris;User=sa;Password=BancoNeoris2023
