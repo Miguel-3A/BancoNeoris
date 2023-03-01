@@ -11,7 +11,6 @@
       ],
       "UpstreamPathTemplate": "/Cliente",
       "UpstreamHttpMethod": [ "POST", "GET", "PATCH" ],
-      "Key": "ClienteTotal",
       "SwaggerKey": "apicliente"
     },
     {
@@ -25,7 +24,6 @@
       ],
       "UpstreamPathTemplate": "/Cliente/{clienteId}",
       "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "Key": "ClienteIndividual",
       "SwaggerKey": "apicliente"
     },
     {
@@ -38,7 +36,8 @@
         }
       ],
       "UpstreamPathTemplate": "/ClienteIdentificacion",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "apicliente"
     },
     {
       "DownstreamPathTemplate": "/Api/Cuenta",
@@ -51,7 +50,6 @@
       ],
       "UpstreamPathTemplate": "/Cuenta",
       "UpstreamHttpMethod": [ "POST", "GET", "PATCH" ],
-      "Key": "CuentaTotal",
       "SwaggerKey": "apicuenta"
     },
     {
@@ -65,7 +63,6 @@
       ],
       "UpstreamPathTemplate": "/Cuenta/{cuentaId}",
       "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "Key": "CuentaIndividual",
       "SwaggerKey": "apicuenta"
     },
     {
@@ -78,7 +75,8 @@
         }
       ],
       "UpstreamPathTemplate": "/CuentaCliente/{clienteId}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "apicuenta"
     },
     {
       "DownstreamPathTemplate": "/Api/Movimiento",
@@ -91,7 +89,6 @@
       ],
       "UpstreamPathTemplate": "/Movimiento",
       "UpstreamHttpMethod": [ "POST", "GET", "PATCH" ],
-      "Key": "MovimientoTotal",
       "SwaggerKey": "apimovimiento"
     },
     {
@@ -105,7 +102,6 @@
       ],
       "UpstreamPathTemplate": "/Movimiento/{movimientoId}",
       "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "Key": "MovimientoIndividual",
       "SwaggerKey": "apimovimiento"
     },
     {
@@ -119,7 +115,6 @@
       ],
       "UpstreamPathTemplate": "/Movimiento/{cuentaId}/{fechaInicial}/{fechaFinal}",
       "UpstreamHttpMethod": [ "GET" ],
-      "Key": "MovimientoFechas",
       "SwaggerKey": "apimovimiento"
     },
     {

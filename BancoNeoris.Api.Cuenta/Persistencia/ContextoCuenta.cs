@@ -8,8 +8,10 @@ namespace BancoNeoris.Api.Cuenta.Persistencia
 {
     public class ContextoCuenta : DbContext
     {
+        public ContextoCuenta() { }
+
         public ContextoCuenta(DbContextOptions<ContextoCuenta> options) : base(options) { }
 
-        public DbSet<Model.Cuenta> Cuenta { get; set; }
+        public virtual DbSet<Model.Cuenta> Cuenta { get; set; }
     }
 }

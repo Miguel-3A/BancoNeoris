@@ -34,14 +34,14 @@ namespace BancoNeoris.Api.Gateway
 
             services.AddHttpClient("GatewayServicio", config => {
                 config.BaseAddress = new Uri(Configuration["Services:Gateway"]);
-            });
+            });            
 
             services.AddOcelot().AddDelegatingHandler<TransaccionHandler>().AddDelegatingHandler<ReporteHandler>();
 
             services.AddSwaggerForOcelot(Configuration, (o) =>
             {
                 //o.GenerateDocsForAggregates = true;
-                o.GenerateDocsForGatewayItSelf = true;                
+                //o.GenerateDocsForGatewayItSelf = true;         
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
