@@ -3,10 +3,10 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>c2d26cd5-60bc-4438-a486-21b96dfcd98c</ProjectGuid>
+    <ProjectGuid>59324b49-8d8f-41bf-b75b-3a2d88f7d72e</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>banconeoris.api.cliente</DockerServiceName>
+    <DockerServiceName>banconeoris.api.gateway</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
